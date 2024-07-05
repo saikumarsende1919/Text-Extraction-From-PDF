@@ -1,0 +1,36 @@
+1. Create a requirements.txt file
+Create a requirements.txt file in your project directory with the following content:
+
+        streamlit
+        pdfplumber
+        pandas
+        wordcloud
+        matplotlib
+        spacy
+        
+Install the required packages using the `requirements.txt` file:
+   pip install -r requirements.txt
+
+2. Include spaCy model installation in your script
+Since the spaCy model en_core_web_sm needs to be downloaded separately, include instructions for
+downloading it in your README file, or add a command to your script to download it if not already present.
+Additionally, download the spaCy model en_core_web_sm:
+
+        python -m spacy download en_core_web_sm
+
+ 3. Complete Project Directory Structure
+
+Ensure your project directory includes the following files:
+
+/your_project_directory
+|-- main.py                //pdfplumberapp.py 
+|-- requirements.txt
+|-- README.md
+|-- sample.pdf # Optional: for testing   PDFs which we have 
+
+
+
+4.Running the Application
+Run the Streamlit app with the following command:
+
+    streamlit run main.py
